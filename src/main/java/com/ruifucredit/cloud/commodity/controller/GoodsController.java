@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ruifucredit.cloud.commodity.pojo.dto.Goods;
-import com.ruifucredit.cloud.commodity.pojo.dto.Outcoming;
 import com.ruifucredit.cloud.commodity.service.IGoodsService;
+import com.ruifucredit.cloud.commodity.support.dto.Goods;
+import com.ruifucredit.cloud.kit.dto.Outcoming;
 
 import lombok.SneakyThrows;
 

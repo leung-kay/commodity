@@ -7,9 +7,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ruifucredit.cloud.commodity.pojo.dto.Goods;
 import com.ruifucredit.cloud.commodity.repository.db.GoodsRepository;
 import com.ruifucredit.cloud.commodity.repository.db.SubGoodsRepository;
+import com.ruifucredit.cloud.commodity.support.dto.Goods;
 
 @Service
 public class GoodsService implements IGoodsService {

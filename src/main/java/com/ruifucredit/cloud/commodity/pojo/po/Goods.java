@@ -57,28 +57,28 @@ public class Goods {
 		super();
 	}
 	
-	public Goods(com.ruifucredit.cloud.commodity.pojo.dto.Goods goods) {
+	public Goods(com.ruifucredit.cloud.commodity.support.dto.Goods goods) {
 		this();
 		
 		BeanUtils.copyProperties(goods, this, "subGoodses");
 		
 		if (goods.getSubGoodses() != null) {
 			subGoodses = new ArrayList<>(goods.getSubGoodses().size());
-			for (com.ruifucredit.cloud.commodity.pojo.dto.SubGoods subGoods : goods.getSubGoodses()) {
+			for (com.ruifucredit.cloud.commodity.support.dto.SubGoods subGoods : goods.getSubGoodses()) {
 				this.subGoodses.add(new SubGoods(subGoods));
 			}
 		}
 	}
 	
-	public com.ruifucredit.cloud.commodity.pojo.dto.Goods goods() {
-		com.ruifucredit.cloud.commodity.pojo.dto.Goods goods = 
-				new com.ruifucredit.cloud.commodity.pojo.dto.Goods();
+	public com.ruifucredit.cloud.commodity.support.dto.Goods goods() {
+		com.ruifucredit.cloud.commodity.support.dto.Goods goods = 
+				new com.ruifucredit.cloud.commodity.support.dto.Goods();
 		
 		BeanUtils.copyProperties(this, goods, "subGoodses");
 		
 		if (getSubGoodses() != null) {
 			
-			List<com.ruifucredit.cloud.commodity.pojo.dto.SubGoods> subGoodses = 
+			List<com.ruifucredit.cloud.commodity.support.dto.SubGoods> subGoodses = 
 					new ArrayList<>(getSubGoodses().size());
 			
 			for (SubGoods subGoods : getSubGoodses()) {
